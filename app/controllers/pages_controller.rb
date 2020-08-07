@@ -5,6 +5,7 @@ class PagesController < ApplicationController
     image = RTesseract.new(image_url)
     puts "=========== image ========="
     p image
-    @result = image.to_s
+    result = image.to_s
+    p result
   end
 end
